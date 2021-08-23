@@ -1,4 +1,4 @@
-@login
+@smokeLogin
 Feature: Login as an authorized user
     Background:
       Given the User_Evelin is on the login page
@@ -12,15 +12,15 @@ Feature: Login as an authorized user
     Examples:
       | validUsername               | validPassword    |
       | salesmanager15@info.com     | salesmanager     |
-#      | salesmanager105@info.com    | salesmanager     |
-#      | posmanager10@info.com       | posmanager       |
-#      | posmanager155@info.com      | posmanager       |
-#      | expensesmanager10@info.com  | expensesmanager  |
-#      | expensesmanager110@info.com | expensesmanager  |
-#      | imm10@info.com              | inventorymanager |
-#      | imm160@info.com             | inventorymanager |
-#      | manuf_user10@info.com       | manufuser        |
-#      | manuf_user110@info.com      | manufuser        |
+      | salesmanager105@info.com    | salesmanager     |
+      | posmanager10@info.com       | posmanager       |
+      | posmanager155@info.com      | posmanager       |
+      | expensesmanager10@info.com  | expensesmanager  |
+      | expensesmanager110@info.com | expensesmanager  |
+      | imm10@info.com              | inventorymanager |
+      | imm160@info.com             | inventorymanager |
+      | manuf_user10@info.com       | manufuser        |
+      | manuf_user110@info.com      | manufuser        |
 
 
   Scenario Outline: User login with invalid
@@ -31,15 +31,15 @@ Feature: Login as an authorized user
 
       | username                  | password         |
       | salesmanager1@info.com    | salesmanager     |
-#      | salesmanager5@info.com    | alesman          |
-#      | pos_manager10@info.com    | posmanager       |
-#      | posmanager10@info.com     | posman8ager      |
-#      | expensesmanager@info.com  | expensesmanager  |
-#      | expensesmanager10@inf.com | exit             |
-#      | inn10@info.com            | inventory.anager |
-#      | Great sentence            | blablabla        |
-#      | manu_user_10@info.com     | manufuser        |
-#      | manu_user10@info.com      | manuf/user       |
+      | salesmanager5@info.com    | alesman          |
+      | pos_manager10@info.com    | posmanager       |
+      | posmanager10@info.com     | posman8ager      |
+      | expensesmanager@info.com  | expensesmanager  |
+      | expensesmanager10@inf.com | exit             |
+      | inn10@info.com            | inventory.anager |
+      | Great sentence            | blablabla        |
+      | manu_user_10@info.com     | manufuser        |
+      | manu_user10@info.com      | manuf/user       |
 
 
   Scenario Outline: User leaves any login input box blanked
@@ -49,7 +49,7 @@ Feature: Login as an authorized user
     Examples:
       | emptyUsernameBox | emptyPasswordBox |
       |                  | posmanager       |
-#      | imm10@info.com   |                  |
-#      |                  |                  |
+      | imm10@info.com   |                  |
+      |                  |                  |
 
 
